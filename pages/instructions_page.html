@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>How to Play</title>
-  <link rel="stylesheet" href="css/instruction_page.css"/>
+  <link rel="stylesheet" href="/css/instruction_page.css"/>
 </head>
 <body>
 
@@ -32,14 +32,15 @@
 
     <!-- Buttons -->
     <div class="buttons">
-      <button class="btn back">BACK</button>
-      <button class="btn next">NEXT</button>
-    </div>
+      /*Navigate back to index.html*/
+  <button class="btn back" onclick="window.location.href='index.html'">BACK</button>
+  <button class="btn next">NEXT</button>
+</div>
 
   </div>
 
-    <audio id="bgMusic" loop>
-  <source src="audio/Mysterium _ Board Game Background Music.mp3" type="audio/mpeg">
+     <audio id="bgMusic" autoplay loop muted>
+  <source src="/audio/Mysterium _ Board Game Background Music.mp3" type="audio/mpeg">
 </audio>
 
 </body>

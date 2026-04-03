@@ -1,9 +1,9 @@
 const bgMusic = document.getElementById("bgMusic");
 const startBtn = document.getElementById("startBtn");
 
-startBtn.addEventListener("click", () => {
-  bgMusic.play();
-  setTimeout(() => {
-    window.location.href = "/pages/instructions_page.html";
-  }, 300);
-});
+// Unmute + ensure play on first interaction
+document.addEventListener("click", () => {
+  bgMusic.muted = false;
+  bgMusic.play().catch(err => console.log(err));
+}, { once: true });
+
