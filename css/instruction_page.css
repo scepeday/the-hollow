@@ -67,6 +67,7 @@ body {
 /* Button styling */
 .btn {
   background: url("/images/button-frame2\ 2.png") no-repeat center/contain;
+  background-size: 100% 100%;
   padding: 20px 60px;
   font-size: 1.5rem;
   border: none;
@@ -74,6 +75,7 @@ body {
   cursor: pointer;
   background-color: transparent;
   transition: 0.2s;
+  
 }
 
 /* Text colors */
@@ -114,4 +116,23 @@ body {
     padding: 12px 30px;
     font-size: 1rem;
   }
+}
+
+.qr-section {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.qr-code {
+  width: 180px;
+  height: 180px;
+  margin-top: 10px;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
 }
